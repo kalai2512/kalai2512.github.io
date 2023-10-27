@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body{
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(css/cs.jpg);
+      background-size:cover;
+      background-repeat: no-repeat;
+      height: 96vh;
+      
+    }
+ .menu{
+  min-width: fit-content;
+ }   
+span{
+  color:blue;
+}
+h1{
+  color: white;
+}
+h2{
+  position: absolute;
+  top:35%;
+  left: 20%;
+  font-size: 50px;
+  color: aliceblue;
+  animation-name: kalai;
+  
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transition: 2s;
+}
+@keyframes kalai {
+  0%{
+    transform:translateX(20px);
+    color: aqua;
+    text-shadow: 2px -2px 10px yellow;
+  }
+  25%{
+    color: rgb(214, 233, 47);
+    transition: 1s;
+  }
+}
+#head{
+  animation-name: arasan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 2s;
+}
+@keyframes arasan {
+  0% ,10%{
+    transform: rotatex(360deg);
+  }
+}
+h3{
+color:rgb(243, 243, 230);  
+opacity: 0.5; 
+}
+#para{
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  color: beige;
+  opacity: 0.2;
+}
+
+.box{
+  border:2px solid white;
+  width: 20%;
+  height: 40%;
+  float: left;
+  position:relative;
+  top: 40%;
+  margin: 10px;
+  box-shadow: 2px -2px 10px white;
+}
+#p{
+  color: aquamarine;
+}
+#year{
+  color: rgb(212, 26, 157);
+}
+.contain{
+  display:inline-flex;
+  list-style-type: none;
+  margin-top: 0px;
+  
+  position: absolute;
+  top:12% ;
+  right: 10%;
+  align-items:center;
+  
+  
+  
+}
+.contain>li,a{
+  text-decoration: none;
+  padding-left: 5px;
+}
+.contain>li{
+  display:block;
+  margin: 10px;
+  border: 2px solid #b6b8b1;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  top: -70%;
+  left: 1%;
+  margin-left: 20px;
+  color: white;
+  z-index: 1;
+}
+.contain>li:hover{
+ background-color:rgb(245, 241, 15);
+ color: rgb(5, 5, 5);
+ border-color: yellow;
+ border-radius: 10px;
+ box-shadow: 2px -2px 20px rgb(208, 243, 11);
+}
+#time{
+  
+  position: relative;
+  top: 90%;
+  left: 10%;
+  color: white;
+  list-style: none;
+  visibility: hidden;
+}
+#time:hover{
+  visibility: hidden;
+}
+.contain,li:nth-child(1):hover #time{
+  visibility: visible;
+}
+#shift{
+  color: white;
+  position: relative;
+  top: 100%;
+  left: 20%;
+  list-style: none;
+  visibility: hidden;
+}
+ li:nth-child(2):hover #shift{
+  visibility: visible;
+}
+#course{
+  color: rgb(233, 221, 221);
+  position: relative;
+  top: 100%;
+  left: 50%;
+  list-style: none;
+  visibility: hidden;
+}
+li:nth-child(3):hover #course{
+  visibility: visible;
+}
+#topic{
+  position: absolute;
+  top: 1%;
+  left: 65%;
+}
+img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: solid wheat 2px;
+  position: absolute;
+  top: 13%;
+}
+
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <img src="css/dp.JPG" alt="">
+    <h1  id="head"><span>Wel</span>come</h1>
+   <h2>KALAI <span>ARASAN</span></h2>
+    <h3>Art is Long but life is Short</h3>
+    <p id="para">by <br>kalai B.sc</p>
+  </div>
+    <div class="box">
+     <h1>#<span id="year">Skill</span></h1>
+     
+     <p id="p"> HTML<br>CSS<br>JAVA SCRIPT</p>
+    </div>
+    <div class="box">
+      <h1>#<span id="year">My Info</span><br></h1>
+      <p id="p">KALAIARASAN A<br>B.SC Student <br>Kamarajar Govt arts College <br>surandai</p>
+    </div>
+    <div class="box">
+      <h1>#<span id="year"> Contact</span id="year"></h1>
+      <p id="p"><br><br>gmail: <br>akalaiarasan67@gmail.com<br>ph: <br> 9345615738 </p>
+    </div>
+    <h1 id="topic">Education</h1>
+    <div>
+      
+      <ul class="contain">
+        <li><a href="">SSLC</a>
+          <ul id="time">
+            <li>Govt.Hr.School Vellalankullam</li>
+            
+          </ul>
+        </li>
+        <li><a href="">HCS</a>
+          <ul id="shift">
+            <li>Govt.Hr.School Vellalankullam</li>
+            
+          </ul>
+        </li>
+        <li><a href="">UG</a>
+          <ul id="course">
+            <li>Kamarajar.Govt.Arts college <br> Surandai</li>
+            
+  
+          </ul>
+        </li>
+      </ul>
+      </div>
+
+</body>
+</html>
